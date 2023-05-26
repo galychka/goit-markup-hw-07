@@ -44,7 +44,7 @@ img {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 40px;
+   /* gap: 40px; */
     list-style: none;
     padding: 0;
     margin: 0;
@@ -202,17 +202,33 @@ button {
 
 .email-link {}
 
-.list-item {}
+.list-item {
+    
+}
 
 
 .list-phone-link {}
  */
 /* HERO */
 
+
 .hero-section {
+    height: 432px;
     text-align: center;
     background: var(--subtitle-color);
     padding: 188px 0;
+}
+
+@media screen and (min-width: 768px) {
+    .item-calc {
+        height: 120px;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .item-calc {
+        height: 224px;
+    }
 }
 
 .hero-overlay {
@@ -226,7 +242,37 @@ button {
     background-size: cover;
 }
 
+.hero-title {
+    margin-bottom: 72px;
+    max-width: 320px;
+    max-height: 80px;
+    margin-left: auto;
+    margin-right: auto;
 
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+
+@media screen and (min-width: 768px) {
+    .hero-title {
+        margin-bottom: 36px;
+            max-width: 496px;
+            max-height: 120px;
+            margin-left: auto;
+            margin-right: auto;
+        
+            font-weight: 700;
+            font-size: 56px;
+            line-height: 0.93;
+            letter-spacing: 0.02em;
+            color: #FFFFFF;
+    }
+}
+
+@media screen and (min-width: 1158px) {
 .hero-title {
     margin-bottom: 48px;
     max-width: 496px;
@@ -239,6 +285,7 @@ button {
     line-height: 1.07;
     letter-spacing: 0.02em;
     color: #FFFFFF;
+}
 }
 
 .hero-button {
@@ -271,8 +318,7 @@ button {
 /* MAIN */
 
 .visually-hidden-section {
-    padding: 120px 0;
-
+    
 }
 
 .visually-hidden {
@@ -334,30 +380,41 @@ button {
 }
 
 .list-title {
-    margin-bottom: 8px;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: var(--subtitle-color);
-}
-
-@media screen and (max-width: 1157px) {
-.list-title {
+    display: flex;
+    justify-content: center;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 8px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
     color: var(--subtitle-color);
 }
+
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+    .list-title {
+    display: block;
+    margin-left: 0;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+.list-title {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--subtitle-color);
+    }
 }
 
 .title-section-two {
     max-width: 264px;
     max-height: 72px;
-
+    
 }
 
 .list-lead {
@@ -383,7 +440,6 @@ button {
 
 /* Section three */
 .section-three {
-    padding-bottom: 120px;
 }
 
 @media screen and (max-width: 1157px) {
@@ -422,12 +478,18 @@ button {
 
 .section {
     padding: 96px 0;
+    outline: 1px solid green;
 }
 
 @media screen and (min-width: 1158px) {
     .section {
         padding: 120px 0;
+        outline: 1px solid red;
     }
+}
+
+.team-card {
+   
 }
 
 .list-item-card {
@@ -455,6 +517,10 @@ button {
 
 .title-team-card {
     text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+        
 }
 
 .container-card-team {
@@ -506,32 +572,56 @@ button {
 /* Customers*/
 
 .customers {
-    padding-top: 120px;
-    padding-bottom: 120px;
+/* padding-top: 120px;
+    padding-bottom: 120px;*/
+    display: flex;
+    flex-direction: row;
+
 }
 
-.customers-container {}
-
-.customers-list {
-    gap: 24px;
+.customers-container {
+  width: 396px;
+    
 }
 
 .customers-item {
-    transition: border-color, color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 
 .customers-link {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 168px;
+    width: 190px;
     height: 88px;
     color: #8E8F99;
     border-radius: 4px;
     border: 1px solid #8E8F99;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+}
+
+@media screen and (min-width: 768) and (min-width: 1158) {
+    .customers-link {
+        width: 168px;
+    }
+}
+
+.customers-list {
+    flex-basis: calc((100% - 16px) / 2);
+
+}
+
+@media screen and (min-width: 768) and (min-width: 1158) {
+    .customers-list {
+        flex-basis: calc((100% - 24px) / 3);
+        gap: 24px;
+    }
+}
+
+.customers-item {
+    transition: border-color, color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-link:hover,
