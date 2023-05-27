@@ -88,13 +88,13 @@ button {
 
 .section {
     padding: 96px 0;
-    outline: 1px solid green;
+    
 }
 
 @media screen and (min-width: 1158px) {
     .section {
         padding: 120px 0;
-        outline: 1px solid red;
+
     }
 }
 
@@ -584,20 +584,21 @@ button {
 
 .customers-item {
     transition: border-color, color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .customers-link {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 198px;
+    width: 190px;
     height: 88px;
     color: #8E8F99;
     border-radius: 4px;
     border: 1px solid #8E8F99;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+    
 }
 
 @media screen and (min-width: 768px) {
@@ -607,12 +608,12 @@ button {
 }
 
 .customers-list {
-    gap: 16px;
+    gap: 72px 16px;
 }
 
 @media screen and (min-width: 768px) {
     .customers-list {
-        gap: 24px;
+        gap: 72px 24px;
     }
 }
 
@@ -785,11 +786,29 @@ button {
 }
 
 .footer {
+    height: 664px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 100px 0;
+    padding: 96px 0;
     background: var(--subtitle-color);
+}
+
+@media screen and (min-width: 768px) {
+    .footer {
+
+}
+}
+
+
+@media screen and (min-width: 1158px) {
+.footer {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ padding: 100px 0;
+ background: var(--subtitle-color);
+    }
 }
 
 .footer-logo {
