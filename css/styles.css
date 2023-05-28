@@ -955,7 +955,12 @@ margin-bottom: 100px;
 
 min-height: 80px;
 
+}
 
+@media screen and (min-width: 1158px) {
+    .subscribe-container {
+    margin-left: auto;
+    }
 }
 
 @media screen and (min-width: 1158px) {
@@ -1012,7 +1017,7 @@ margin-bottom: 16px;
     border: none;
 }
 
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 768px) {
     .subscribe-btn {
         margin-left: 24px;
     }
