@@ -14,19 +14,32 @@
 
   <body class="body">
     <!-- Header -->
-    <!--
+    
       <header class="main-header">
       <div class="container page-header-container">
-      <nav class="main-nav">
         <a class="link-logo link" href="./index.html">Web<span class="header-logo">Studio</span></a>
-        <ul class="menu list">
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="32"
+            height="22"
+          class="svg-burger"
+          >
+           <use href="./images/icons.svg#burger-icon"></use>
+          </svg>
+        </button>
+      <nav class="main-nav">
+        <ul class="menu list list-header">
           <li class="list-item nav-item"><a class="menu link nav-link active" href="./index.html">Studio</a></li>
           <li class="list-item nav-item"><a class="menu link nav-link" href="./portfolio.html">Portfolio</a></li>
           <li class="list-item nav-item"><a class="menu link nav-link" href="">Contacts</a></li>
         </ul>
       </nav>
       <address class="address">
-        <ul class="list link address-list">
+        <ul class="list link address-list list-header">
           <li class="list-email-link">
             <a class="address-link link email-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
           <li class="list-phone-link">
@@ -35,7 +48,7 @@
       </address>
        </div>
     </header>
-    -->
+    
     <!--Hero-->
     <main>
       <section class="section hero-section hero-overlay">
@@ -331,7 +344,7 @@
     </footer>
   
     <!--Modal Window-->
-    <!--<div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-close-btn" type="button" data-modal-close>
             <svg class="modal-close-icon" width="8" height="8">
@@ -391,11 +404,42 @@
         <button class="hero-button" type="submit">Send</button>
       </form>
       </div>
-      
+       
+      <!--Mobile menu-->
+      <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu list">
+        <li><a href="" class="link">About</a></li>
+        <li><a href="" class="link">Products</a></li>
+        <li><a href="" class="link">Contacts</a></li>
+        <li><a href="" class="link">Career</a></li>
+      </ul>
+    </div>
 
     </div>
     <script src="./js/modal.js"></script>
-  -->
+  <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
 
