@@ -837,6 +837,12 @@ button {
     color: var(--button-color);
 }
 
+@media screen and (min-width: 768px) {
+    .link-logo-footer {
+        justify-content: left;
+    }
+}
+
 @media screen and (min-width: 1158px) {
     .link-logo-footer {
     display: inline-block;
@@ -880,16 +886,23 @@ button {
 
 @media screen and (min-width: 1158px) {
 .footer-container {
+    width: 1158px;
     align-items: baseline;
     text-align: left;
-    flex-wrap: nowrap;
+    
     }
 }
 
 .footer-logo-container {
     text-align: center;
-    margin-bottom: 72px;
     
+    
+}
+
+@media only screen and (max-width: 767px) {
+    .footer-logo-container {
+        margin-bottom: 72px;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1157px) {
@@ -932,11 +945,6 @@ button {
     margin-bottom: 72px;
 }
 
-@media screen and (min-width: 1158px) {
-.footer-socials {
-margin-bottom: 100px;
-    }
-}
 
 .footer-socials-links {
     display: flex;
