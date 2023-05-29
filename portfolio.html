@@ -14,27 +14,39 @@
 
   <body class="body">
     <!-- Header -->
-    <header class="main-header">
+    
+      <header class="main-header">
       <div class="container page-header-container">
-      <nav class="main-nav">
         <a class="link-logo link" href="./index.html">Web<span class="header-logo">Studio</span></a>
-        <ul class="menu list">
-          <li class="list-item nav-item"><a class="menu link nav-link" href="./index.html">Studio</a></li>
-          <li class="list-item nav-item"><a class="menu link nav-link active" href="./portfolio.html">Portfolio</a></li>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu">
+          <svg
+            width="32"
+            height="22"
+          class="svg-burger">
+           <use href="./images/icons.svg#burger-icon"></use>
+          </svg>
+        </button>
+
+      <nav class="main-nav">
+        <ul class="menu list list-header">
+          <li class="list-item nav-item"><a class="menu link nav-link active" href="./index.html">Studio</a></li>
+          <li class="list-item nav-item"><a class="menu link nav-link" href="./portfolio.html">Portfolio</a></li>
           <li class="list-item nav-item"><a class="menu link nav-link" href="">Contacts</a></li>
         </ul>
       </nav>
       <address class="address">
-        <ul class="list link link-nav">
-          <li class="list-email-link">
+        <ul class="list link address-list list-header">
+          <li class="list-email-link nav-tablet">
             <a class="address-link link email-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
           <li class="list-phone-link">
-            <a class="address-link link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+            <a class="address-link link email-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
         </ul>
       </address>
-      </div>
+       </div>
     </header>
-    <main>
       <!-- Filters -->
       <section class="filters-section">
         <div class=" container container-portfolio">
