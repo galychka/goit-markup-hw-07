@@ -648,9 +648,9 @@ margin-bottom: 40px;
     color: var(--subtitle-color);
 }
 
-@media screen and (min-width: 768px) and (max-width: 1157px) {
+@media screen and (min-width: 768px) {
     .list-title {
-    
+    text-align: left;
     }
 }
 
@@ -689,6 +689,12 @@ margin-bottom: 40px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+}
+
+@media screen and (max-width: 1157px) {
+    .list-lead-two {
+       font-weight: 500;
+    }
 }
 
 /* Section three */
